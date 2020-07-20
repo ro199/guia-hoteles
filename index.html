@@ -5,13 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
     <title>Guia Hoteles</title>
 </head>
 <body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top ">
+        <a href="#" class="navbar-brand">Hoteles</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupported" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupported">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a href="./index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="./about.html" class="nav-link">Nosotros</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Precios</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Terminos y Condiciones</a></li>
+                <li class="nav-item"><a href="./contacto.html" class="nav-link">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <div class="jumbotron">
         <h1>Hoteles</h1>
     </div>
     <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page"><a href="./index.html">Home</a></li>
+            </ol>
+        </nav>
         <div class="d-flex">
             <div class="col-sm-4">
                 <p>
@@ -35,58 +57,66 @@
         <hr>
 
         <div class="d-flex flex-wrap flex-row-reverse">
-            <div class="card-hotel d-flex flex-column justify-content-between">
-                <div>
-                    <h4>Hotel Barcelona</h4>
-                    <p>Holtel ubicado en pleno centro de Barcelona a pocosmetros de la playa</p>
+            <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+                <div class="card-body">
+                    <h5 class="card-title">Hotel Barcelona</h5>
+                    <h6 class="card-subtitle text-muted"> Espania</h6>
+                    <img src="./images/" alt="hotel img" class="card-img-top">
+                    <p class="card-text">Holtel ubicado en pleno centro de Barcelona a pocosmetros de la playa</p>
                 </div>
-                <div>
-                    <button class="btn btn-success btn-reserva">Reservar</button>
-                </div>
-            </div>
-            <div class="card-hotel d-flex flex-column justify-content-between">
-                <div>
-                    <h4>Hotel Bueno Aires</h4>
-                    <p>Holtel ubicado en pleno centro de Barcelona a pocosmetros de la playa</p>
-                </div>
-                <div>
-                    <button class="btn btn-success btn-reserva">Reservar</button>
+                <div >
+                    <button class="btn btn-success btn-reserva">
+                        <span class="oi oi-plus"></span> Reservar</button>
                 </div>
             </div>
-            <div class="card-hotel d-flex flex-column justify-content-between">
-                <div>
-                    <h4>Hotel Lima</h4>
+            <div class="card card-hotel d-flex flex-column justify-content-between">
+                <div class="card-body">
+                    <h5 class="card-title">Hotel Bueno Aires</h5>
+                    <h6 class="card-subtitle text-muted"> Espania</h6>
                     <p>Holtel ubicado en pleno centro de Barcelona a pocosmetros de la playa</p>
                 </div>
                 <div>
-                    <button class="btn btn-success btn-reserva">Reservar</button>
+                    <button class="btn btn-success btn-reserva"><span class="oi oi-plus"></span> Reservar</button>
                 </div>
             </div>
-            <div class="card-hotel d-flex flex-column justify-content-between">
-                <div>
-                    <h4>Hotel Rio de Janeiro</h4>
-                    <p>Holtel ubicado en pleno centro de Barcelona a pocosmetros de la playa</p>
+            <div class="card card-hotel d-flex flex-column justify-content-between">
+                <div class="card-body">
+                    <h5 class="card-title">Hotel Lima</h5>
+                    <h6 class="card-subtitle text-muted"> Espania</h6>
+                    <p class="card-text">Holtel ubicado en pleno centro de Barcelona a pocosmetros de la playa</p>
                 </div>
                 <div>
-                    <button class="btn btn-success btn-reserva">Reservar</button>
-                </div>
-            </div>
-            <div class="card-hotel d-flex flex-column justify-content-between">
-                <div>
-                    <h4>Hotel La Paz</h4>
-                    <p>Holtel ubicado en pleno centro de Barcelona a pocosmetros de la playa</p>
-                </div>
-                <div>
-                    <button class="btn btn-success btn-reserva">Reservar</button>
+                    <button class="btn btn-success btn-reserva"><span class="oi oi-plus"></span> Reservar</button>
                 </div>
             </div>
-            <div class="card-hotel d-flex flex-column justify-content-between">
-                <div>
-                    <h4>Hotel Madrid</h4>
-                    <p>Holtel ubicado en pleno centro de Barcelona a pocosmetros de la playa</p>
+            <div class="card card-hotel d-flex flex-column justify-content-between">
+                <div class="card-body">
+                    <h5 class="card-title">Hotel Rio de Janeiro</h5>
+                    <h6 class="card-subtitle text-muted"> Espania</h6>
+                    <p class="card-text">Holtel ubicado en pleno centro de Barcelona a pocosmetros de la playa</p>
                 </div>
                 <div>
-                    <button class="btn btn-success btn-reserva">Reservar</button>
+                    <button class="btn btn-success btn-reserva"><span class="oi oi-plus"></span> Reservar</button>
+                </div>
+            </div>
+            <div class="card card-hotel d-flex flex-column justify-content-between">
+                <div class="card-body">
+                    <h5 class="card-title">Hotel La Paz</h5>
+                    <h6 class="card-subtitle text-muted"> Espania</h6>
+                    <p class="card-text">Holtel ubicado en pleno centro de Barcelona a pocosmetros de la playa</p>
+                </div>
+                <div>
+                    <button class="btn btn-success btn-reserva"><span class="oi oi-plus"></span> Reservar</button>
+                </div>
+            </div>
+            <div class="card card-hotel d-flex flex-column justify-content-between">
+                <div class="card-body">
+                    <h5 class="card-title">Hotel Madrid</h5>
+                    <h6 class="card-subtitle text-muted"> Espania</h6>
+                    <p class="card-text">Holtel ubicado en pleno centro de Barcelona a pocosmetros de la playa</p>
+                </div>
+                <div>
+                    <button class="btn btn-success btn-reserva"><span class="oi oi-plus"></span> Reservar</button>
                 </div>
             </div>
         </div>
@@ -103,6 +133,9 @@
             <div class="col-sm-4">
                 <address>
                     <h3>Oficina central</h3>
+                    <p><span class="oi oi-home footer-address-icon"></span>Casa</p>
+                    <p><span class="oi oi-phone footer-address-icon"></span>36562646533435</p>
+                    <p><span class="oi oi-inbox footer-address-icon"></span>contact@skdfjld.com</p>
                 </address>
             </div>
             <div class="col-sm-4 d-flex flex-column align-items-end">

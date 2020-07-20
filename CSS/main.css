@@ -1,27 +1,87 @@
-.jumbotron{
-    background-color: yellow;
-    color: black;
-    margin-top: 50px;
+*{
+	margin: 0px;
+	padding: 0px;
+}
+	
+HTML {
+  height: 100%;
+  }
+BODY {
+  background: linear-gradient( 90deg,
+      rgba(255, 225, 132, .7) 50%, rgba(255,255,255, 0) 50%),
+    linear-gradient( 90deg,
+      rgba(32, 113, 120, .3) 50%, rgba(255,255,255, 0) 50%),
+    linear-gradient( 90deg,
+      rgba(255, 150, 102, .3) 50%, rgba(255,255,255, 0) 50%),
+    linear-gradient( 90deg,
+      rgba(23, 76, 79, .1) 50%, rgba(255,255,255, 0) 50%);
+  background-size: 7em 7em, 5em 5em, 3em 3em, 1em 1em;
+  background-color: #F5E9BE;
+  font: 15px/1.4 'Trebuchet MS', Verdana, sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  height: 100%
+  }
+/*HEADER*/
+.jumbotron-mt-5 h1 {
+	background-color:#FFEA0D;
+	padding: 20px 0;
+	text-align: center;
+	font-size:  2.9em;
+	margin-top: 50px;
 }
 
-footer{
-    padding: 10px 10px 0p 10px;
-    background-color: yellow;
-    margin-bottom: 0px;
-    margin-top: 10px;
+@media screen and (max-width:768px) {
+	.col-sm-1 {
+		text-align: center;
+	}
+	.container .col-sm-2 {
+		text-align: center;
+	}
+	.container .col-sm-3 {
+		text-align: center;
+	}
+	.container .col-sm-4 {
+		text-align: center;
+	}
 }
 
-.card-hotel{
-    flex: 1 200px;
-    padding: 2px 0px 2px 0px;
-    margin-top: 10px;
+.container{ 
+    background: #C2FFD5}
+
+.page-footer{
+	background: #504F4F;
+	color: #FCFCFC;   
 }
 
-.btn-reserva{
-    width: 100%;
-    border-radius: 0px;
+.footer-copyright{
+	background: #030303
 }
 
 .footer-address-icon{
-    padding-right: 10px;
+	padding-right: 10px;
+}
+
+.btn-mas {
+	width: 40%;
+	text-align: center; 
+}
+
+.card{
+	background: #C2FFD5;
+	margin-top: 20px;
+	flex: 1 200px;
+}
+
+.table-icon{
+	padding-right: 10px;
+}
+
+.btn-reserva{
+	width: 190px;
+}
+
+.tab-content {
+	padding-top: 10px;
 }

@@ -9,143 +9,219 @@
     <title>Guia Hoteles</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top ">
-        <a href="#" class="navbar-brand">Hoteles</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupported" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="./index.html">Máquinas</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupported">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item "><a href="./index.html" class="nav-link">Home</a></li>
-                <li class="nav-item active"><a href="./about.html" class="nav-link">Nosotros</a></li>
-                <li class="nav-item"><a href="./precios.html" class="nav-link" active>Precios</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Terminos y Condiciones</a></li>
-                <li class="nav-item"><a href="./contacto.html" class="nav-link">Contacto</a></li>
+                <li class="navitem"><a href="./index.html" class="nav-link">Home</a></li>
+                <li class="navitem"><a href="./about.html" class="nav-link">Nosotros</a></li>
+                <li class="navitem active"><a href="#" class="nav-link">Precios</a></li>
+                <li class="navitem"><a href="#" class="nav-link">Términos y condiciones</a></li>
+                <li class="navitem"><a href="./contacto.html" class="nav-link">Contacto</a></li>
             </ul>
         </div>
     </nav>
-
     <div class="jumbotron">
-        <h1>Hoteles</h1>
+        <h1 class="display-4">Máquinas Dispensadoras</h1>
+        <hr class="my-4">
     </div>
-    <div class="container">
+    <div class="container text-justify">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item "><a href="./index.html">Home</a></li>
+                <li class="breadcrumb-item" aria-current="page"><a href="./index.html">Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Precios</li>
             </ol>
         </nav>
-        
-        <div class="table-responsive">
-            <table class="table table-striped">
-                <thead class="thead-dark">
-                    <th>Calidad</th>
-                    <th>Pinamar</th>
-                    <th>Mar de plata</th>
-                    <th>San clemente</th>
-                    <th>Santa teresita</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><span class="oi oi-star"></span></td>
-                        <td>$100</td>
-                        <td>$120</td>
-                        <td>$150</td>
-                        <td>$200</td>
-    
-                    </tr>
-                    <tr>
-                        <td><span class="oi oi-star"></span>
-                            <span class="oi oi-star"></span>
-                        </td>
-                        <td>$100</td>
-                        <td>$120</td>
-                        <td>$150</td>
-                        <td>$200</td>
-    
-                    </tr>
-                    <tr>
-                        <td><span class="oi oi-star"></span>
-                            <span class="oi oi-star"></span>
-                            <span class="oi oi-star"></span>
-                        </td>
-                        <td>$100</td>
-                        <td>$120</td>
-                        <td>$150</td>
-                        <td>$200</td>
-    
-                    </tr>
-                    <tr>
-                        <td><span class="oi oi-star"></span>
-                            <span class="oi oi-star"></span>
-                            <span class="oi oi-star"></span>
-                            <span class="oi oi-star"></span>
-                        </td>
-                        <td>$100</td>
-                        <td>$120</td>
-                        <td>$150</td>
-                        <td>$200</td>
-    
-                    </tr>
-                    <tr>
-                        <td><span class="oi oi-star"></span>
-                            <span class="oi oi-star"></span>
-                            <span class="oi oi-star"></span>
-                            <span class="oi oi-star"></span>
-                            <span class="oi oi-star"></span>
-                        </td>
-                        <td>$100</td>
-                        <td>$120</td>
-                        <td>$150</td>
-                        <td>$200</td>
-    
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        
-        <div class="d-flex justify-content-center">
-            <div class="card" style="width: 18rem;">
-                <div class="card-header" style="background-color: blue; color: white;">
-                    Tarjetas aceptadas
+
+        <!-- PESTAÑAS -->
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="compara-tab" data-toggle="tab" href="#compara" role="tab"
+                    aria-controls="compara" aria-selected="true">Compara</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="tarjetas-tab" data-toggle="pill" href="#tarjetas" role="tab" aria-controls="tarjetas"
+                    aria-selected="false">Tarjetas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="comentarios-tab" data-toggle="pill" href="#comentarios" role="tab"
+                    aria-controls="comentarios" aria-selected="false">Comentarios</a>
+            </li>
+        </ul>
+
+        <!-- CONTENIDO DE LAS PESTAÑAS -->
+        <div class="tab-content" id="myTabContent">
+
+            <!-- TABLA -->
+            <div class="tab-pane fade show active" id="compara" role="tabpanel" aria-labelledby="compara-tab">
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead class="thead-dark">
+                            <th>Tipo</th>
+                            <th>Bebidas Frías</th>
+                            <th>Mecatos</th>
+                            <th>Bebidas Calientes</th>
+                            <th>Libros</th>
+                            <th>Tecnología</th>
+                            <th>Aseo Personal</th>
+                            <th>Medicamentos</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="oi oi-beaker"></span> Máquina 1</td>
+                                <td>$100</td>
+                                <td>$110</td>
+                                <td>$120</td>
+                                <td>$130</td>
+                                <td>$140</td>
+                                <td>$150</td>
+                                <td>$160</td>
+                            </tr>
+                            <tr>
+                                <td><span class="oi oi-paperclip"></span> Máquina 2</td>
+                                <td>$200</td>
+                                <td>$210</td>
+                                <td>$220</td>
+                                <td>$230</td>
+                                <td>$240</td>
+                                <td>$250</td>
+                                <td>$260</td>
+                            </tr>
+                            <tr>
+                                <td><span class="oi oi-droplet"></span> Máquina 3</td>
+                                <td>$300</td>
+                                <td>$310</td>
+                                <td>$320</td>
+                                <td>$330</td>
+                                <td>$340</td>
+                                <td>$350</td>
+                                <td>$360</td>
+                            </tr>
+                            <tr>
+                                <td><span class="oi oi-book"></span> Máquina 4</td>
+                                <td>$400</td>
+                                <td>$410</td>
+                                <td>$420</td>
+                                <td>$430</td>
+                                <td>$440</td>
+                                <td>$450</td>
+                                <td>$460</td>
+                            </tr>
+                            <tr>
+                                <td><span class="oi oi-headphones"></span> Máquina 5</td>
+                                <td>$500</td>
+                                <td>$510</td>
+                                <td>$520</td>
+                                <td>$530</td>
+                                <td>$540</td>
+                                <td>$550</td>
+                                <td>$560</td>
+                            </tr>
+                            <tr>
+                                <td><span class="oi oi-trash"></span> Máquina 6</td>
+                                <td>$600</td>
+                                <td>$610</td>
+                                <td>$620</td>
+                                <td>$630</td>
+                                <td>$640</td>
+                                <td>$650</td>
+                                <td>$660</td>
+                            </tr>
+                            <tr>
+                                <td><span class="oi oi-medical-cross"></span> Máquina 7</td>
+                                <td>$700</td>
+                                <td>$710</td>
+                                <td>$720</td>
+                                <td>$730</td>
+                                <td>$740</td>
+                                <td>$750</td>
+                                <td>$760</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Tarjeta Basica</li>
-                    <li class="list-group-item">Tarjeta VIP</li>
-                    <li class="list-group-item">Tarjeta Black</li>
-
-                </ul>
-
             </div>
 
+            <!--TARJETAS-->
+            <div class="tab-pane fade" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
+                <div class="accordion" id="accordionTarjetas">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseBasica"
+                                    aria-expanded="true" aria-controls="collapseBasica">Tarjeta Básica</button>
+                            </h5>
+                        </div>
+                        <div id="collapseBasica" class="collapse" aria-labelledby="headingOne" data-parent="#accordionTarjetas">
+                            <div class="card-body">
+                                Podes reservar en 3 cuotas sin interés.
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseVIP"
+                                    aria-expanded="false" aria-controls="collapseVIP">Tarjeta VIP</button>
+                            </h5>
+                        </div>
+                        <div id="collapseVIP" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionTarjetas">
+                            <div class="card-body">
+                                Podes reservar en 6 cuotas sin interés.
+                                Al llegar, recibirás una canasta de obsequios para disfrutar con tu familia.
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseBlack"
+                                    aria-expanded="false" aria-controls="collapseBlack">Tarjeta Black</button>
+                            </h5>
+                        </div>
+                        <div id="collapseBlack" class="collapse" aria-labelledby="headingThree" data-parent="#accordionTarjetas">
+                            <div class="card-body">
+                                Podes reservar en 12 cuotas sin interés.
+                                Al llegar, recibirás una canasta de obsequios para disfrutar con tu familia y un acceso al gimnasio
+                                y spa todos los días de tus vacaciones.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COMENTARIOS -->
+            <div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">Comentarios</div>
+
         </div>
-
-
-
-
-
-
-
     </div>
 
     <footer>
         <div class="row">
-            <div class="col-sm-4 d-flex flex-column">
-                <a href="www.facebook.com">Facebook</a>
-                <a href="www.youtube.com">Youtube</a>
-                <a href="www.instagram.com">Instagram</a>
-                <a href="www.google.com">Google</a>
+            <div class="col-sm-4 d-flex flex-column ">
+                <a href="http://www.facebook.com">Facebook</a>
+                <a href="http://www.twitter.com">Twitter</a>
+                <a href="http://www.instagram.com">Instagram</a>
+                <a href="http://www.google.com">Google</a>
             </div>
             <div class="col-sm-4">
                 <address>
-                    <h3>Oficina central</h3>
+                    <h3>Oficina Principal</h3>
+                    <p>Medellín, Colombia</p>
+                    <p>+57 123456789</p>
+                    <p>miusuario@contacto.com</p>
                 </address>
             </div>
             <div class="col-sm-4 d-flex flex-column align-items-end">
                 <a href="#">Nosotros</a>
                 <a href="#">Precios</a>
-                <a href="#">Terminos y Condiciones</a>
-                <a href="#">Contacto</a>
+                <a href="#">Términos y Condiciones</a>
+                <a href="#">Contácto</a>
             </div>
         </div>
     </footer>
